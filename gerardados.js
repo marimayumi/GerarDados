@@ -3,6 +3,13 @@ console.log(btnGerardados);
 
 btnGerardados.addEventListener('click', () => {
 
+    document.querySelector('#campo1').textContent = '';
+    document.querySelector('#negativos').textContent = '';
+    document.querySelector('#sucessores').textContent = '';
+    document.querySelector('#pares').textContent = '';
+    document.querySelector('#quantidade').textContent = '';
+    document.querySelector('#soma').textContent = '';
+
     const array = Array.from({length: 20}, () => Math.round(Math.random() * 100));
 
     document.querySelector('#campo1').textContent += ` ${array} `;
